@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane focusTraversable="true" prefHeight="750.0" prefWidth="300.0" stylesheets="@LeftBar_time.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LeftBar_time">
+   <center>
+      <VBox alignment="TOP_CENTER" focusTraversable="true" prefHeight="750.0" prefWidth="300.0" spacing="5.0" style="-fx-background-color: #3A4832;">
+         <children>
+            <Label alignment="CENTER" focusTraversable="false" prefHeight="53.0" prefWidth="265.0" style="-fx-background-color: black;" text="BATTLE ROYALE 3D" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="35.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <VBox alignment="TOP_CENTER" style="-fx-background-color: black;">
+               <children>
+                  <Label focusTraversable="false" text="POSITION" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="40.0" />
+                     </font>
+                  </Label>
+                  <Group fx:id="map_group">
+                     <children>
+                        <Rectangle fx:id="map_rec" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="180.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
+                        <Canvas fx:id="map_canvas" height="180.0" width="180.0" />
+                     </children>
+                  </Group>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <GridPane alignment="CENTER" focusTraversable="true" hgap="30.0" style="-fx-background-color: black;" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints halignment="CENTER" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                <RowConstraints prefHeight="30.0" valignment="CENTER" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+              </rowConstraints>
+               <children>
+                  <Label focusTraversable="false" text="HP" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="28.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="3.0" arcWidth="3.0" fill="#f50f0f" height="22.0" stroke="WHITE" strokeType="INSIDE" style="-fx-fill: transparent;" width="100.0" GridPane.columnIndex="1" />
+                  <Label focusTraversable="false" text="MAGAZINE" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Impact" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="mag_lb" text="30/30" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Impact" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label focusTraversable="false" text="Kills" textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Impact" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="kill_lb" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Impact" size="28.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="hp_bar" arcHeight="3.0" arcWidth="3.0" fill="#f50f0f" focusTraversable="true" height="22.0" stroke="WHITE" strokeType="INSIDE" width="100.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                  <Label fx:id="HPlabel" contentDisplay="CENTER" text="100/100" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label focusTraversable="false" text="Gun Type" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Impact" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="gun_type_lb" maxHeight="-Infinity" maxWidth="-Infinity" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Impact" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </GridPane>
+            <VBox alignment="CENTER" spacing="5.0" style="-fx-background-color: black;">
+               <children>
+                  <Label focusTraversable="false" text="TIME" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="40.0" />
+                     </font>
+                  </Label>
+                  <Line endX="120.0" fill="WHITE" startX="-100.0" stroke="WHITE" strokeWidth="5.0" />
+                  <Label fx:id="time_lb" text="60:00" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="pause_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#btnPressed" style="-fx-background-color: transparent;" text="Button" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

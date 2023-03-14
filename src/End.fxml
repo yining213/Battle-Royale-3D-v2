@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane fx:id="pane" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="End">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: black;" stylesheets="@End.css">
+         <children>
+            <Group layoutX="82.0" layoutY="-12.0">
+               <children>
+                  <Label fx:id="badge_lb" text="Label" />
+                  <VBox alignment="CENTER" layoutX="40.0" layoutY="67.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="name_lb" text="BATTLE" textFill="WHITE">
+                           <font>
+                              <Font name="Impact" size="55.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="name_lb1" text="ROYALE" textFill="WHITE">
+                           <font>
+                              <Font name="Impact" size="55.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="name_lb11" text="3D" textFill="WHITE">
+                           <font>
+                              <Font name="Impact" size="55.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Group>
+            <Text fx:id="result_lb" layoutX="380.0" layoutY="165.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3.0" style="-fx-fill: #3A4832 #3A4832;" text="Text">
+               <font>
+                  <Font name="Impact" size="150.0" />
+               </font>
+            </Text>
+            <VBox alignment="CENTER" layoutX="90.0" layoutY="378.0" spacing="20.0">
+               <children>
+                  <Label fx:id="try_lb" alignment="CENTER" lineSpacing="10.0" onMouseClicked="#lbPressed" prefWidth="1000.0" style="-fx-border-radius: 100; -fx-border-width: 5; -fx-border-color: white;" text="T R Y   A G A I N" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="120.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="back_to_lb" alignment="CENTER" lineSpacing="10.0" onMouseClicked="#lbPressed" prefWidth="1000.0" style="-fx-border-width: 5; -fx-border-radius: 100; -fx-border-color: white;" text="B A C K   T O   M E N U" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="120.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

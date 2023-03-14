@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane fx:id="pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" stylesheets="@pause.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PauseController">
+   <children>
+      <VBox layoutX="32.0" layoutY="27.0">
+         <children>
+            <Label text="GOD's Perspective">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Wheel Up: Zoom In">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Wheel Down: Zoom Out">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Group layoutX="18.0" layoutY="136.0">
+         <children>
+            <Group layoutX="107.0" layoutY="24.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="28.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #3A4832 #3A4832; -fx-text-fill: white;" text="Q" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <VBox alignment="CENTER" layoutX="8.0" layoutY="-27.0">
+                     <children>
+                        <Label text="Change" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label text="Gun" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <Label layoutX="2.0" layoutY="55.0" style="-fx-background-color: #3A4832; -fx-text-fill: white;" text="Tab" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="21.0" text="Switch" underline="true">
+                     <font>
+                        <Font name="Impact" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="23.0" text="Perspective" underline="true">
+                     <font>
+                        <Font name="Impact" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group layoutX="198.0" layoutY="72.0">
+               <children>
+                  <Label layoutY="58.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #3A4832 #3A4832; -fx-text-fill: white;" text="W" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label text="Move" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label text="Forward" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Group>
+            <Group layoutX="126.0" layoutY="202.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #3A4832 #3A4832; -fx-text-fill: white;" text="A" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <VBox alignment="CENTER" layoutX="15.0" layoutY="72.0">
+                     <children>
+                        <Label text="Left" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label text="Shift" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Group>
+            <Group layoutX="190.0" layoutY="202.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="8.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #3A4832 #3A4832; -fx-text-fill: white;" text="S" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <VBox alignment="CENTER" layoutY="71.0">
+                     <children>
+                        <Label text="Move" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label text="Backward" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Group>
+            <Group layoutX="270.0" layoutY="201.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #3A4832 #3A4832; -fx-text-fill: white;" text="D" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <VBox alignment="CENTER" layoutX="12.0" layoutY="73.0">
+                     <children>
+                        <Label text="Right" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label text="Shift" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Group>
+            <Group layoutX="392.0" layoutY="21.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="28.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #3A4832 #3A4832; -fx-text-fill: white;" text="P" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="9.0" text="Pause" underline="true">
+                     <font>
+                        <Font name="Impact" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group layoutX="317.0" layoutY="21.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="28.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #3A4832 #3A4832; -fx-text-fill: white;" text="R" textAlignment="CENTER">
+                     <font>
+                        <Font name="Impact" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <VBox alignment="CENTER" layoutX="8.0" layoutY="-27.0">
+                     <children>
+                        <Label text="Speed" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label text="Up" underline="true">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <VBox alignment="CENTER_LEFT" layoutX="479.0" layoutY="363.0">
+         <children>
+            <Label text="1. Rotate toward upper left corner" underline="true">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font>
+            </Label>
+            <Label text="2. No rotation" underline="true">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font>
+            </Label>
+            <Label text="3. Rotate toward right substantially" underline="true">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Line endX="535.0000610351562" endY="3.0517578125E-5" layoutX="265.0" layoutY="497.0" startX="-265.0" startY="3.0517578125E-5" stroke="#3a4832" strokeWidth="10.0" />
+      <Line endX="50.00006103515625" endY="143.00006103515625" layoutX="350.0" layoutY="504.0" startX="50.00006103515625" startY="-4.999969482421875" stroke="#3a4832" strokeWidth="10.0" />
+      <Label fx:id="resume_btn" alignment="CENTER" layoutX="60.0" layoutY="513.0" onMouseClicked="#btnPressed" style="-fx-text-fill: #3A4832;" text="RESUME" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="80.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Group layoutX="526.0" layoutY="160.0">
+         <children>
+            <Circle fill="DODGERBLUE" layoutX="102.0" layoutY="81.0" radius="100.0" stroke="#3a4832" strokeType="INSIDE" style="-fx-fill: #3A4832 #3A4832 #3A4832 #3A4832;" />
+            <Circle fill="WHITE" layoutX="102.0" layoutY="80.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" style="-fx-fill: white;" />
+            <Label fx:id="arrow" layoutX="112.0" layoutY="85.0" rotate="-20.0" text="Pause" underline="true">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="73.0" layoutY="87.0" stroke="BLACK" strokeType="OUTSIDE" text="Center">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font>
+            </Text>
+            <Label fx:id="arrow" layoutX="43.0" layoutY="22.0" rotate="-20.0" text="Pause" underline="true">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="55.0" layoutY="31.8154296875" stroke="BLACK" strokeType="OUTSIDE" text="1">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="105.0" layoutY="124.0" stroke="BLACK" strokeType="OUTSIDE" text="2">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font>
+            </Text>
+            <Label fx:id="arrow" layoutX="144.0" layoutY="46.0" rotate="-20.0" text="Pause" underline="true">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="154.0" layoutY="49.8154296875" stroke="BLACK" strokeType="OUTSIDE" text="3">
+               <font>
+                  <Font name="Impact" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Label alignment="CENTER" layoutX="483.0" layoutY="75.0" style="-fx-text-fill: white; -fx-background-color: black;" text="MOVE YOUR MOUSE TO ROTATE" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Label fx:id="quit_btn" alignment="CENTER" layoutX="516.0" layoutY="513.0" onMouseClicked="#btnPressed" style="-fx-text-fill: #3A4832;" text="QUIT" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="80.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="sound" layoutX="694.0" layoutY="4.0" onMouseClicked="#btnPressed" text="Label">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</Pane>

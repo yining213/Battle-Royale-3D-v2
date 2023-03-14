@@ -1,0 +1,58 @@
+/* BasicShapes.css */
+/* CSS that styles various two-dimensional shapes */
+
+Rectangle{
+    -fx-stroke-width: 5; 
+    -fx-stroke: white; 
+    -fx-arc-width: 20; 
+    -fx-arc-height: 20;
+    -fx-fill: null;
+}
+#home_lb:hover{
+    -fx-text-fill: yellow;
+}
+#exit_lb:hover{
+    -fx-text-fill: yellow;
+}
+/* #survival_lb:hover{
+    -fx-text-fill: red;
+}
+#timer_lb:hover{
+    -fx-text-fill: red;
+} */
+/* #on_lb:hover{
+    -fx-text-fill: red;
+}
+#off_lb:hover{
+    -fx-text-fill: red;
+} */
+#play_lb:hover{
+    -fx-text-fill: red;
+}
+#leftArrow_btn:hover{
+    -fx-text-fill: red;
+}
+#rightArrow_btn:hover{
+    -fx-text-fill: red;
+}
+#rec0 {
+    -fx-arc-width: 40; 
+    -fx-arc-height: 40;
+}
+#leftArrow_btn{
+    -fx-graphic: url(../images/left.png); 
+    -fx-content-display: graphic-only;
+}
+#leftArrow_btn:hover{
+    -fx-text-fill: red;
+}
+#rightArrow_btn:hover{
+    -fx-text-fill: red;
+}
+#rightArrow_btn{
+    -fx-graphic: url(../images/rightArrow.png); 
+    -fx-content-display: graphic-only;
+}
+#imageView{
+    -fx-image: url(../images/map_1.png);
+}

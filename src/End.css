@@ -1,0 +1,17 @@
+#badge_lb{
+    -fx-background-image: url(../images/end_badge.png); 
+    -fx-content-display: graphic-only;
+    -fx-background-size: 230px;
+    -fx-background-color: transparent;
+    -fx-pref-width: 230px;
+    -fx-pref-height: 400px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#try_lb:hover{
+    -fx-text-fill: yellow;
+}
+#back_to_lb:hover{
+    -fx-text-fill: yellow;
+}

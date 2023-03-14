@@ -1,0 +1,25 @@
+#pause_btn{
+    -fx-background-image: url(images/pause.png); 
+    -fx-content-display: graphic-only;
+    -fx-background-size: 90px;
+    -fx-background-color: transparent;
+    -fx-pref-width: 90px;
+    -fx-pref-height: 90px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+#pause_btn:hover{
+    -fx-text-fill: red;
+}
+#gun_type_lb{
+    /* -fx-background-image: url(images/pistol.png);  */
+    -fx-content-display: graphic-only;
+    -fx-background-size: 50px;
+    -fx-background-color: transparent;
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
