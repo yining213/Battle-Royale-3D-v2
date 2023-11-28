@@ -1,4 +1,6 @@
 # Battle-Royale-3D-v2
+### Demo Video: https://youtu.be/K_y6Qn0E9So
+
 ### 要先新增東西
 點開src檔內的JFX3DModelImporters_EA_2014-02-09，解壓縮jimObjModelImporterJFX.jar，找一下你電腦執行javafx的路徑資料夾（javafx-sdk-17.0.2），把剛剛解壓縮好的資料夾放到javafx-sdk-17.0.2/src內，另外複製jimObjModelImporterJFX.jar(沒解壓縮的jar檔)到javafx-sdk-17.0.2/lib內
 
